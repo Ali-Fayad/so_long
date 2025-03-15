@@ -60,6 +60,7 @@ so_long/
 │── 📂 Include/         # Header files
 │── 📂 Srcs/            # Source files
 │── 📂 xpms/            # Textures
+│── 📂 mlx/             # Here should be the mlx
 │── 📜 Makefile         # Compilation script
 │── 📖 README.md        # Project documentation
 ```
