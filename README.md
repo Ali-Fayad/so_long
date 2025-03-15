@@ -14,10 +14,28 @@
 ### 📌 Requirements:
 - 🖥️ GCC compiler
 - 🛠️ `make`
-- 🏗️ MiniLibX
+- 🏗️ MiniLibX (must be installed separately)
 - 🖥️ X11 libraries (`libxext-dev` and `libx11-dev` for Linux)
 
-### 📂 Steps:
+### 📥 Installing MiniLibX
+Since `mlx` is not included in this repository, you must install it manually:
+
+#### 🔹 For Linux:
+```sh
+sudo apt-get install libxext-dev libx11-dev
+cd /usr/local
+sudo git clone https://github.com/42Paris/minilibx-linux.git mlx
+cd mlx
+make
+```
+Then, when compiling, link it with `-L/usr/local/mlx -lmlx -lXext -lX11`.
+
+#### 🔹 For macOS:
+```sh
+brew install minilibx
+```
+
+### 📂 Steps to Compile and Run:
 1. 📥 Clone the repository:
    ```sh
    git clone https://github.com/yourusername/so_long.git
@@ -41,7 +59,6 @@
 so_long/
 │── 📂 Include/         # Header files
 │── 📂 Srcs/            # Source files
-│── 📂 mlx/             # MiniLibX library
 │── 📂 xpms/            # Textures
 │── 📜 Makefile         # Compilation script
 │── 📖 README.md        # Project documentation
