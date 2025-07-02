@@ -38,7 +38,7 @@ brew install minilibx
 ### 📂 Steps to Compile and Run:
 1. 📥 Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/so_long.git
+   git clone https://github.com/Ali-Fayad/so_long.git
    cd so_long
    ```
 2. 🏗️ Compile the project:
